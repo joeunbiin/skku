@@ -8,7 +8,7 @@
 #header > .left {padding: 20px 0; letter-spacing: -0.06em;}
 #header > .left img {width: 50px; margin-right: 3px; vertical-align: top;}
 #header > .left h1 {font-size: 34px; display: inline-block; 
-                  margin-top: 13px;}
+                    margin-top: 13px;}
 #header > .left h1 span {font-weight: 900;}
 #header > .nav {width: 56%;}
 #header .depth1 {display: flex; justify-content: space-around;
