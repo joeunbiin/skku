@@ -11,11 +11,11 @@ button {outline: none; background: none;}
 #main .section01 {height: 675px; position: relative; margin-top: 98px;}
 #main .section01 .slide_group01 {position: relative;}
 #main .section01 .slide_group01 .slide {position: relative;}
-#main .section01 .slide_group01 .slide01 .img {background: url(/images/main_slider_01.jpg) no-repeat center;
+#main .section01 .slide_group01 .slide01 .img {background: url(images/main_slider_01.jpg) no-repeat center;
                                                height: 675px; background-size: cover;}
-#main .section01 .slide_group01 .slide02 .img {background: url(/images/main_slider_02.jpg) no-repeat center;
+#main .section01 .slide_group01 .slide02 .img {background: url(images/main_slider_02.jpg) no-repeat center;
                                                height: 675px; background-size: cover;}
-#main .section01 .slide_group01 .slide03 .img {background: url(/images/main_slider_03.jpg) no-repeat center;
+#main .section01 .slide_group01 .slide03 .img {background: url(images/main_slider_03.jpg) no-repeat center;
                                                height: 675px; background-size: cover;}
 #main .section01 .slide_group01 .slide.slick-active .img {animation: slideImg 5s both;}                           
 @keyframes slideImg {from {transform: scale3d(1,1,1)} to {transform: scale3d(1.3,1.3,1.3)}}                          
@@ -95,6 +95,7 @@ button {outline: none; background: none;}
 #publication .publication .txtbox ul {line-height: 1.5; letter-spacing: 0em; margin-bottom: 10px;}
 #publication .publication .txtbox ul li:nth-of-type(1) {font-size: 18px;}
 #publication .publication .txtbox ul li:nth-of-type(2) {color: #999}
+#publication .publication .txtbox ul.onetxt li {color: #999; font-size: 16px;}
 
 
 
