@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto+Slab&display=swap'); */
+/* body {font-family: 'Nanum Gothic', 'Roboto Slab', serif;} */
+
+@import url('https://webfontworld.github.io/naver/NanumSquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+body { font-family: 'NanumSquare'; letter-spacing: 0.06em;}
+.row {max-width: 1200px; margin: 0 auto;}
+button {outline: none; background: none;}
+
+/* MAIN 페이지 */
+/* #main section01 구역 */
+#main .section01 {height: 675px; position: relative; margin-top: 98px;}
+#main .section01 .slide_group01 {position: relative;}
+#main .section01 .slide_group01 .slide {position: relative;}
+#main .section01 .slide_group01 .slide01 .img {background: url(/hi/images/main_slider_01.jpg) no-repeat center;
+                                               height: 675px; background-size: cover;}
+#main .section01 .slide_group01 .slide02 .img {background: url(/hi/images/main_slider_02.jpg) no-repeat center;
+                                               height: 675px; background-size: cover;}
+#main .section01 .slide_group01 .slide03 .img {background: url(/hi/images/main_slider_03.jpg) no-repeat center;
+                                               height: 675px; background-size: cover;}
+#main .section01 .slide_group01 .slide.slick-active .img {animation: slideImg 5s both;}                           
+@keyframes slideImg {from {transform: scale3d(1,1,1)} to {transform: scale3d(1.3,1.3,1.3)}}                          
+#main .section01 .slide_group01 .slidetext {position: absolute; top: 50%; left: 0; right: 0; line-height: 1.5;
+                                            text-align: center; color: #fff; transform: translateY(-50%); 
+                                            word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
+#main .section01 .slide_group01 .slidetext h2 {font-size: 50px; font-weight: 700;}
+/* .section01 .slide_group01 .slide.slick-active .slidetext h2 {animation: fadeInDown 0.5s both 0.3s;} 
+.section01 .slide_group01 .slide.slick-active .slidetext p {animation: fadeInDown 0.5s both 0.8s;} 
+.section01 .slide_group01 .slide.slick-active .slidetext a {animation: fadeInUp 0.5s both 1.3s;}  */
+#main .section01 .slide_group01 .slick-arrow {position: absolute; top: 50%; transform: translateY(-50%);
+                                              border: none; background: none;
+                                              z-index: 9999; font-size: 25px; 
+                                              color:#fff;}
+#main .section01 .slide_group01 .prev {left: 50px; width: 45px; height: 45px; cursor: pointer;
+                                       line-height: 45px; background:rgba(255,255,255,0.2); transition: all 0.5s;}
+#main .section01 .slide_group01 .next {right: 50px; width: 45px; height: 45px; cursor: pointer;
+                                       line-height: 45px; background:rgba(255,255,255,0.2); transition: all 0.5s;}
+#main .section01 .slide_group01 .prev:hover, .slide_group01 .next:hover {background:rgba(255,255,255,0.5); color:#333}                    
+#main .section01 .slide_group01 .slick-dots {position: absolute; bottom: 120px; left: 0; right: 0; text-align: center;}
+#main .section01 .slide_group01 .slick-dots li {display: inline-block; margin: 0 5px; width: 60px; height: 4px; 
+                                                background:rgba(255,255,255,0.2); position: relative;}
+#main .section01 .slide_group01 .slick-dots li button {width: 0px; height: 4px; background: #ccc; text-indent: -9999px; 
+                                                       border: none; overflow: hidden; position: absolute; top: 0; left: 0;}
+#main .section01 .slide_group01 .slick-dots li.slick-active button {animation: barani 3s both;}
+@keyframes barani {from {width: 0;} to {width: 60px;}}
+
+
+/* PEOPLE 페이지 */
+/* #people 공통 */
+#people {margin-top: 100px;}
+#people .people {padding: 40px 0;}
+#people .tit {text-align: center;}
+#people h1 {font-weight: 900; text-align: center;
+            padding: 0 7px; display: inline-block;
+            font-size: 45px; box-shadow: inset 0 -20px 0 rgba(7, 42, 96, 0.5)}
+            /*  rgba(141, 198, 63, 0.6) ; */
+
+/* #people - professor (class: people01) */  
+#people .people01 {margin: 80px 0; display: flex; justify-content: center}
+#people .people01 .right { margin-left: 50px;}
+#people .people01 .txt {margin-bottom: 25px; line-height: 1.8;}
+#people .people01 .txt > p {font-size: 20px; font-weight: 900; 
+                            margin-bottom: 10px; display: inline-block;}
+#people .people01 .txt > p.udline {position: relative;}
+#people .people01 .txt > p.udline::after {position: absolute; content: '';
+                                          width: 100%; height: 6px;
+                                          background: rgba(141, 198, 63, 0.8);
+                                          bottom: 0px; left: 0;}
+#people .people01 .txt span {font-weight: 700;}
+#people .people01 .txt i {margin-right: 5px;}
+/* 영어, 한글 글꼴찾어 ~ */
