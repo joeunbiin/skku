@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/naver/NanumSquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+body { font-family: 'NanumSquare'; letter-spacing: 0.06em;}
+.row {max-width: 1200px; margin: 0 auto;}
+button {outline: none; background: none;}
+
+/* MAIN 페이지 */
+/* #main section01 구역 */
+#main .section01 {height: 675px; position: relative; margin-top: 98px;}
+#main .section01 .slide_group01 {position: relative;}
+#main .section01 .slide_group01 .slide {position: relative;}
+#main .section01 .slide_group01 .slide01 .img {background: url(../images/main_slider_01.jpg) no-repeat center;
+                                               height: 675px; background-size: cover;}
+#main .section01 .slide_group01 .slide02 .img {background: url(../images/main_slider_02.jpg) no-repeat center;
+                                               height: 675px; background-size: cover;}
+#main .section01 .slide_group01 .slide03 .img {background: url(../images/main_slider_03.jpg) no-repeat center;
+                                               height: 675px; background-size: cover;}
+#main .section01 .slide_group01 .slide.slick-active .img {animation: slideImg 5s both;}                           
+@keyframes slideImg {from {transform: scale3d(1,1,1)} to {transform: scale3d(1.3,1.3,1.3)}}                          
+#main .section01 .slide_group01 .slidetext {position: absolute; top: 50%; left: 0; right: 0; line-height: 1.5;
+                                            text-align: center; color: #fff; transform: translateY(-50%); 
+                                            word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
+#main .section01 .slide_group01 .slidetext h2 {font-size: 50px; font-weight: 700;}
+/* .section01 .slide_group01 .slide.slick-active .slidetext h2 {animation: fadeInDown 0.5s both 0.3s;} 
+.section01 .slide_group01 .slide.slick-active .slidetext p {animation: fadeInDown 0.5s both 0.8s;} 
+.section01 .slide_group01 .slide.slick-active .slidetext a {animation: fadeInUp 0.5s both 1.3s;}  */
+#main .section01 .slide_group01 .slick-arrow {position: absolute; top: 50%; transform: translateY(-50%);
+                                              border: none; background: none;
+                                              z-index: 9999; font-size: 25px; 
+                                              color:#fff;}
+#main .section01 .slide_group01 .prev {left: 50px; width: 45px; height: 45px; cursor: pointer;
+                                       line-height: 45px; background:rgba(255,255,255,0.2); transition: all 0.5s;}
+#main .section01 .slide_group01 .next {right: 50px; width: 45px; height: 45px; cursor: pointer;
+                                       line-height: 45px; background:rgba(255,255,255,0.2); transition: all 0.5s;}
+#main .section01 .slide_group01 .prev:hover, .slide_group01 .next:hover {background:rgba(255,255,255,0.5); color:#333}                    
+#main .section01 .slide_group01 .slick-dots {position: absolute; bottom: 120px; left: 0; right: 0; text-align: center;}
+#main .section01 .slide_group01 .slick-dots li {display: inline-block; margin: 0 5px; width: 60px; height: 4px; 
+                                                background:rgba(255,255,255,0.2); position: relative;}
+#main .section01 .slide_group01 .slick-dots li button {width: 0px; height: 4px; background: #ccc; text-indent: -9999px; 
+                                                       border: none; overflow: hidden; position: absolute; top: 0; left: 0;}
+#main .section01 .slide_group01 .slick-dots li.slick-active button {animation: barani 3s both;}
+@keyframes barani {from {width: 0;} to {width: 60px;}}
+
+/* #page 공통 */
+#page {margin-top: 100px;}
+#page > section:nth-of-type(1) {padding: 50px 0;}
+#page .tit {text-align: center;}
+#page .tit h1 {font-weight: 900; text-align: center;
+               padding: 0 7px; display: inline-block;
+               font-size: 45px; box-shadow: inset 0 -20px 0 rgba(7, 42, 96, 0.7)}
+            /*  rgba(141, 198, 63, 0.6) ; */
+
+
+/* 1 .ABOUT 페이지 */
+/* #about - intro */
+#about .about01 {margin: 100px 0 90px; font-size: 18px;}
+#about .about01 h2 {font-size: 27px; font-weight: 700; color: #072a60;
+                    margin-bottom: 30px; line-height: 1.5;}
+#about .about01 .txtbox:nth-of-type(1) p {line-height: 1.5; margin-bottom: 5px; }
+#about .about01 .txtbox:nth-of-type(1) p:nth-of-type(2) {margin-bottom: 15px;}
+#about .about01 ul {margin-left: 20px; margin-bottom: 30px;}
+#about .about01 ul li {line-height: 1.8; list-style: disc; }
+#about .about01 > span {line-height: 1.5; font-weight: 700; font-size: 20px;}
+#about .about01 .txtbox:nth-of-type(2) {margin-top: 50px;}
+#about .about01 .txtbox:nth-of-type(2) p {line-height: 1.5; margin-bottom: 5px; }
+#about .about01 .txtbox:nth-of-type(2) p:nth-of-type(3) {margin-bottom: 15px;}
+#about .about01 .txtbox:nth-of-type(2) > span {font-weight: 700; font-size: 20px;}
+
+/* #about - contact us */
+#about .about02 {margin: 100px 0 90px; display: flex; justify-content: space-around; 
+                 font-size: 18px;}
+#about .about02 .map {width: 60%;}
+#about .about02 .txtbox {margin: 25px 0 35px 70px; width: 40%;}
+#about .about02 .txtbox span {font-size: 20px; font-weight: 500; line-height: 2;}
+#about .about02 .txtbox p {font-size: 24px; font-weight: 700; line-height: 1.8;
+                           color: #072a60; margin-top: 20px;}
+#about .about02 .txtbox ul {font-size: 20px; font-weight: 700; line-height: 1.8;
+                            margin-bottom: 30px;}
+#about .about02 .txtbox ul > li {font-size: 16px; font-weight: 400; line-height: 1.8;}
+
+
+/* 3. PUBLICATION 페이지 */
+/* #publication */
+#publication .publication {margin: 100px 0 90px; font-size: 16px;}
+#publication .publication .txtbox {margin: 40px 0;}
+#publication .publication .txtbox > p {position: relative; font-size: 25px; font-weight: 900;
+                                          display: inline-block; color: #072a60; 
+                                           margin-bottom: 10px;}
+#publication .publication .txtbox > p::after {position: absolute; content: '';
+                                                width: 86px; height: 6px;
+                                                background: rgba(141, 198, 63, 0.8);
+                                                bottom: -2px; left: -20px;}                                         
+#publication .publication .txtbox ul {line-height: 1.5; letter-spacing: 0em; margin-bottom: 10px;}
+#publication .publication .txtbox ul li:nth-of-type(1) {font-size: 18px;}
+#publication .publication .txtbox ul li:nth-of-type(2) {color: #999}
+#publication .publication .txtbox ul.onetxt li {color: #999; font-size: 16px;}
+
+
+
+
+
+
+
+/* 4. PEOPLE 페이지 */
+/* #people - professor */  
+#people .people01 {margin: 100px 0 70px; display: flex; justify-content: center; font-size: 18px;}
+#people .people01 .right { margin-left: 50px;}
+#people .people01 .txt {margin-bottom: 25px; line-height: 1.8;}
+#people .people01 .txt > p {font-size: 24px; font-weight: 900; 
+                            margin-bottom: 10px; display: inline-block;}
+#people .people01 .txt > p.udline {position: relative;}
+#people .people01 .txt > p.udline::after {position: absolute; content: '';
+                                          width: 100%; height: 6px;
+                                          background: rgba(141, 198, 63, 0.8);
+                                          bottom: 0px; left: 0;}
+#people .people01 .txt span {font-weight: 700;}
+#people .people01 .txt i {margin-right: 5px;}
+
+
