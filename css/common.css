@@ -40,9 +40,9 @@
 #footer > .left {line-height: 1.8;}
 #footer > .left span {margin-right: 35px; position: relative;}
 #footer > .left span::after {content: ''; height: 12px; width: 1px; background: #333;
-                           position: absolute; top: 5px; right: -20px;}
+                           position: absolute; top: 3px; right: -20px;}
 #footer > .left span:nth-of-type(3):after {display: none;}
-#footer > .left span i {margin-right: 8px;}
+#footer > .left span i {margin-right: 8px; vertical-align: middle;}
 #footer > .right {padding-top: 18px;}
 
 /* GO TOP 구역 */
