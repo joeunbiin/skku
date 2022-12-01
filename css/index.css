@@ -95,7 +95,8 @@ button {outline: none; background: none;}
 #publication .publication .txtbox ul {line-height: 1.5; letter-spacing: 0em; margin-bottom: 10px;}
 #publication .publication .txtbox ul li:nth-of-type(1) {font-size: 18px;}
 #publication .publication .txtbox ul li:nth-of-type(2) {color: #999}
-#publication .publication .txtbox ul.onetxt li {color: #999; font-size: 16px;}
+#publication .publication .txtbox ul.onetxt li {color: #999; font-size: 16px; line-height: 1.5; 
+                                                margin-bottom: 10px;}
 
 
 
