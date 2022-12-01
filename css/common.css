@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* HEADER 구역 */
-#header {font-weight: 'Roboto Slab'; position: fixed; z-index: 99999;
+#header {position: fixed; z-index: 99999;
          display: flex; justify-content: space-between; 
          padding: 0px 70px; top: 0; left: 0;
          width: 100%; background: #fff;}
@@ -19,11 +19,11 @@
 #header .depth1 li.on .depth2 {display: block;}
 #header .depth1 > li:hover {color: #8dc63f; }
 #header .depth1 > li:hover > a {color: #8dc63f; }
-#header .depth2 {position: absolute; top: 100%; left: -10%; width: 120%;
+#header .depth2 {position: absolute; top: 100%; left: -5%; width: 110%;
                  z-index: 999; background: #fff;
                  display: none;}
-#header .depth2.wd01 {left: -43%; width: 186%;}
-#header .depth2.wd02 {left: -50%; width: 200%;}
+#header .depth2.wd01 {transform: translate(-50%); width: 300px; left: 50%;}
+#header .depth2.wd02 {transform: translate(-50%); width: 323px; left: 50%;}
 #header .depth2 > li {padding: 15px 0; background: #8dc63f; 
                       color: #fff; font-size: 15px; border-bottom: 1px solid rgb(213, 250, 162); ;}
 #header .depth2 > li:last-child {border-bottom: none;}

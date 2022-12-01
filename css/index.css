@@ -1,8 +1,10 @@
 @charset "utf-8";
 
-@import url('https://webfontworld.github.io/naver/NanumSquare.css');
-@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
-body { font-family: 'NanumSquare'; letter-spacing: 0.06em;}
+/* @import url('https://webfontworld.github.io/naver/NanumSquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap'); */
+/* body {font-family: 'NanumSquare'; letter-spacing: 0.06em;} */
+/* body {font-family: 'NanumGothic'; letter-spacing: 0.06em;} */
+body {font-family: 'NanumSquareNeo'; letter-spacing: 0.06em;}
 .row {max-width: 1200px; margin: 0 auto;}
 button {outline: none; background: none;}
 
@@ -22,7 +24,8 @@ button {outline: none; background: none;}
 #main .section01 .slide_group01 .slidetext {position: absolute; top: 50%; left: 0; right: 0; line-height: 1.5;
                                             text-align: center; color: #fff; transform: translateY(-50%); 
                                             word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
-#main .section01 .slide_group01 .slidetext h2 {font-size: 50px; font-weight: 700;}
+#main .section01 .slide_group01 .slidetext h2 {font-size: 45px; font-weight: 700;}
+#main .section01 .slide_group01 .slidetext p {font-size: 25px; font-weight: 700; margin-top: 10px;}
 /* .section01 .slide_group01 .slide.slick-active .slidetext h2 {animation: fadeInDown 0.5s both 0.3s;} 
 .section01 .slide_group01 .slide.slick-active .slidetext p {animation: fadeInDown 0.5s both 0.8s;} 
 .section01 .slide_group01 .slide.slick-active .slidetext a {animation: fadeInUp 0.5s both 1.3s;}  */
@@ -50,16 +53,14 @@ button {outline: none; background: none;}
 #page .tit h1 {font-weight: 900; text-align: center;
                padding: 0 7px; display: inline-block;
                font-size: 45px; box-shadow: inset 0 -20px 0 rgba(7, 42, 96, 0.7)}
-            /*  rgba(141, 198, 63, 0.6) ; */
 #page .tit02 {text-align: center;}
 #page .tit02 h1 {font-weight: 900; text-align: center;
                 padding: 0 7px; display: inline-block;
-                font-size: 30px; box-shadow: inset 0 -14px 0 rgba(7, 42, 96, 0.7)}
-            /*  rgba(141, 198, 63, 0.6) ; */
+                font-size: 30px; box-shadow: inset 0 -12px 0 rgba(7, 42, 96, 0.6)}
 
 
 /* 1 .ABOUT 페이지 */
-/* #about - intro */
+/* intro */
 #about .about01 {margin: 100px 0 90px; font-size: 18px;}
 #about .about01 h2 {font-size: 27px; font-weight: 700; color: #072a60;
                     margin-bottom: 30px; line-height: 1.5;}
@@ -73,7 +74,7 @@ button {outline: none; background: none;}
 #about .about01 .txtbox:nth-of-type(2) p:nth-of-type(3) {margin-bottom: 15px;}
 #about .about01 .txtbox:nth-of-type(2) > span {font-weight: 700; font-size: 20px;}
 
-/* #about - contact us */
+/* contact us */
 #about .about02 {margin: 100px 0 90px; display: flex; justify-content: space-around; 
                  font-size: 18px;}
 #about .about02 .map {width: 60%;}
@@ -86,7 +87,6 @@ button {outline: none; background: none;}
 #about .about02 .txtbox ul > li {font-size: 16px; font-weight: 400; line-height: 1.8;}
 
 /* 2. RESEARCH 페이지 */
-/* research */
 #research .research {margin: 70px 0 60px; font-size: 16px;}
 #research .research .txtbox {margin-bottom: 40px; margin-left: 110px;}
 #research .research .txtbox li {line-height: 1.8; list-style: disc; }
@@ -94,7 +94,6 @@ button {outline: none; background: none;}
 
 
 /* 3. PUBLICATION 페이지 */
-/* #publication */
 #publication .publication {margin: 100px 0 90px; font-size: 16px;}
 #publication .publication .txtbox {margin: 40px 0;}
 #publication .publication .txtbox > p {position: relative; font-size: 25px; font-weight: 900;
@@ -103,7 +102,7 @@ button {outline: none; background: none;}
 #publication .publication .txtbox > p::after {position: absolute; content: '';
                                                 width: 86px; height: 6px;
                                                 background: rgba(141, 198, 63, 0.8);
-                                                bottom: -2px; left: -20px;}                                         
+                                                bottom: -4px; left: -20px;}                                         
 #publication .publication .txtbox ul {line-height: 1.5; letter-spacing: 0em; margin-bottom: 10px;}
 #publication .publication .txtbox ul li:nth-of-type(1) {font-size: 18px;}
 #publication .publication .txtbox ul li:nth-of-type(2) {color: #999}
@@ -112,7 +111,7 @@ button {outline: none; background: none;}
 
 
 /* 4. PEOPLE 페이지 */
-/* #people - professor */  
+/* professor */  
 #people .people01 {margin: 100px 0 70px; display: flex; justify-content: center; font-size: 18px;}
 #people .people01 .right {margin-left: 50px;}
 #people .people01 .txt {margin-bottom: 25px; line-height: 1.8;}
@@ -122,15 +121,15 @@ button {outline: none; background: none;}
 #people .people01 .txt > p.udline::after {position: absolute; content: '';
                                           width: 100%; height: 6px;
                                           background: rgba(141, 198, 63, 0.8);
-                                          bottom: 0px; left: 0;}
+                                          bottom: 5px; left: 0;}
 #people .people01 .txt span {font-weight: 700;}
 #people .people01 .txt i {margin-right: 5px; color: #777; vertical-align: middle;}
 
-/* #people - student */  
+/* student */  
 #people .people02 {margin: 70px 0 60px; font-size: 18px;}
 #people .people02 .contentbox {margin: 50px 0;}
 #people .people02 .contentbox > h3 {font-size: 24px; font-weight: 900; position: relative;
-                                    margin-bottom: 50px; display: inline-block;}
+                                    margin-bottom: 30px; display: inline-block;}
 #people .people02 .contentbox > h3::after {position: absolute; content: '';
                                            width: 100%; height: 6px;
                                            background: rgba(141, 198, 63, 0.8);
@@ -143,3 +142,12 @@ button {outline: none; background: none;}
 #people .people02 .person .infotxt li:nth-of-type(1) {font-weight: 700; margin-bottom: 23px;}
 #people .people02 .person .infotxt li {line-height: 1.5;}
 #people .people02 .person .infotxt li i {color: #777; vertical-align: middle;}
+
+
+/* 5. GALLERY 페이지 */
+/* gallery */  
+#gallery .gallery {margin: 70px 0 60px; font-size: 18px;}
+#gallery .gallery .contentbox {display: flex; justify-content: space-around; flex-wrap: wrap;}
+#gallery .gallery .contentbox ul {width: 48%; text-align: center; margin-bottom: 25px;}
+#gallery .gallery .contentbox ul li {font-weight: 700;}
+#gallery .gallery .contentbox ul li img {margin-bottom: 10px;}
