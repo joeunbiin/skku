@@ -100,7 +100,7 @@ button {outline: none; background: none;}
                                           display: inline-block; color: #072a60; 
                                            margin-bottom: 10px;}
 #publication .publication .txtbox > p::after {position: absolute; content: '';
-                                                width: 86px; height: 6px;
+                                                width: 66px; height: 6px;
                                                 background: rgba(141, 198, 63, 0.8);
                                                 bottom: -4px; left: -20px;}                                         
 #publication .publication .txtbox ul {line-height: 1.5; letter-spacing: 0em; margin-bottom: 10px;}
@@ -146,9 +146,8 @@ button {outline: none; background: none;}
 
 /* 5. GALLERY 페이지 */
 /* gallery */  
-#gallery .gallery {margin: 70px 0 60px; font-size: 18px;}
+#gallery .gallery {margin: 70px 0 60px; font-size: 16px;}
 #gallery .gallery .contentbox {display: flex; justify-content: space-around; flex-wrap: wrap;}
-#gallery .gallery .contentbox ul {text-align: center; margin-bottom: 25px;
-                                  border: 5px solid #072a60; background: #072a60;}
+#gallery .gallery .contentbox ul {text-align: center; margin-bottom: 25px; background: #072a60;}
 #gallery .gallery .contentbox ul li {font-weight: 700; background: #072a60; color: #fff;}
-#gallery .gallery .contentbox ul li:nth-of-type(2) {padding: 10px 0;}                                    
+#gallery .gallery .contentbox ul li:nth-of-type(2) {padding: 10px 0;}           
