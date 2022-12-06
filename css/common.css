@@ -1,49 +1,51 @@
 @charset "utf-8";
 
 /* HEADER 구역 */
-#header {position: fixed; z-index: 99999;    box-shadow: rgb(153 153 153) 0px -11px 22px;
-         display: flex; justify-content: space-between; 
-         padding: 0px 70px; top: 0; left: 0;
-         width: 100%; background: #fff;}
-#header > .left {padding: 20px 0; letter-spacing: -0.06em;}
-#header > .left img {width: 50px; margin-right: 3px; vertical-align: top;}
-#header > .left h1 {font-size: 34px; display: inline-block; 
+#header .navbox {position: fixed; z-index: 99999; box-shadow: rgb(153 153 153) 0px -11px 22px;
+                 display: flex; justify-content: space-around;; 
+                 padding: 0px; top: 0; left: 0;
+                 width: 100%; background: #fff;}
+#header .navbox .left {padding: 18px 0 18px 0px; letter-spacing: -0.06em; width: 27%;}
+#header .navbox .left img {width: 50px; margin-right: 3px; vertical-align: top;}
+#header .navbox .left h1 {font-size: 34px; display: inline-block; 
                     margin-top: 13px;}
-#header > .left h1 span {font-weight: 900;}
-#header > .nav {width: 56%;}
+#header .navbox .left h1 span {font-weight: 900;}
+#header .navbox .nav {width: 59%;}
 #header .depth1 {display: flex; justify-content: space-around;
                  font-size: 18px; font-weight: 700;}
-#header .depth1 > li {width: 25%; position: relative;
+#header .depth1 > li {position: relative;
                       text-align: center; padding: 40px 0; cursor: pointer; }
 #header .depth1 > li > a {transition: all 0.4s;}
 #header .depth1 li.on .depth2 {display: block;}
 #header .depth1 > li:hover {color: #8dc63f; }
-#header .depth1 > li:hover > a {color: #8dc63f; }
-#header .depth2 {position: absolute; top: 100%; left: -5%; width: 110%;
-                 z-index: 999; background: #fff;
+#header .open, #header .close {display: none;}
+#header .depth2 {position: absolute; top: 100%; left: 50%; width: 250px;
+                 z-index: 999; background: #fff; transform: translate(-50%); 
                  display: none;}
 #header .depth2.wd01 {transform: translate(-50%); width: 300px; left: 50%;}
 #header .depth2.wd02 {transform: translate(-50%); width: 323px; left: 50%;}
 #header .depth2 > li {padding: 15px 0; background: #8dc63f; 
-                      color: #fff; font-size: 15px; border-bottom: 1px solid rgb(213, 250, 162); ;}
+                      color: #fff; border-bottom: 1px solid rgb(213, 250, 162); ;}
 #header .depth2 > li:last-child {border-bottom: none;}
 #header .depth2 li:hover > a {color: #072a60}
-#header .depth2 > li > a {transition: all 0.4s;}
-#header > .right {padding-top: 60px; font-size: 14px; font-weight: 700;
-                color: #aaa; transition: all 0.4s;}
-#header > .right:hover {color: #555; text-decoration: underline;}
+#header .depth2 > li > a {transition: all 0.4s; font-size: 15px;}
+#header .right {font-size: 14px; font-weight: 700; transform: translateY(23px);
+                color: #aaa; transition: all 0.3s;}
+#header .right:hover a {color: #555 !important; text-decoration: underline;}
+
 
 /* FOOTER 구역 */
-#footer {font-weight: 'Roboto Slab'; color: #333;
-         display: flex; justify-content: space-between; 
-         padding: 50px 70px; background: #ececec}
+#footer {color: #555; display: flex; justify-content: space-between; 
+         padding: 50px 70px; background: #ececec; font-size: 15px;}
 #footer > .left {line-height: 1.8;}
+#footer > .left p {font-weight: 700;}
+#footer > .left p:nth-of-type(2) {padding-bottom: 20px;}
 #footer > .left span {margin-right: 35px; position: relative;}
 #footer > .left span::after {content: ''; height: 12px; width: 1px; background: #333;
-                           position: absolute; top: 3px; right: -20px;}
+                             position: absolute; top: 3px; right: -20px;}
 #footer > .left span:nth-of-type(3):after {display: none;}
 #footer > .left span i {margin-right: 8px; vertical-align: middle;}
-#footer > .right {padding-top: 18px;}
+#footer > .right {padding-top: 30px;}
 
 /* GO TOP 구역 */
 .gotop {position: fixed; bottom: 30px; right: 30px; z-index: 999;  

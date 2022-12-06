@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-/* @import url('https://webfontworld.github.io/naver/NanumSquare.css');
-@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap'); */
-/* body {font-family: 'NanumSquare'; letter-spacing: 0.06em;} */
-/* body {font-family: 'NanumGothic'; letter-spacing: 0.06em;} */
 body {font-family: 'NanumSquareNeo'; letter-spacing: 0.06em;}
 .row {max-width: 1200px; margin: 0 auto;}
 button {outline: none; background: none;}
@@ -63,11 +59,11 @@ img[src$=".svg"] {
 #page .tit {text-align: center;}
 #page .tit h1 {font-weight: 900; text-align: center;
                padding: 0 7px; display: inline-block;
-               font-size: 45px; box-shadow: inset 0 -20px 0 rgba(7, 42, 96, 0.7)}
+               font-size: 45px; box-shadow: inset 0 -20px 0 rgba(7, 42, 96, 0.6)}
 #page .tit02 {text-align: center;}
 #page .tit02 h1 {font-weight: 900; text-align: center;
                 padding: 0 7px; display: inline-block;
-                font-size: 30px; box-shadow: inset 0 -12px 0 rgba(7, 42, 96, 0.6)}
+                font-size: 30px; box-shadow: inset 0 -12px 0 rgba(7, 42, 96, 0.5)}
 
 
 /* 1 .ABOUT 페이지 */
