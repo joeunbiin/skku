@@ -1,6 +1,7 @@
+// 모바일 Nav 설정
 $('#header .open').addClass('on')
 $('#header .open').on('click', function () {
-    $(this).next().css({
+    $(this).next().find('.nav').css({
         opacity: 1
     }).animate({
         right: 0
@@ -9,8 +10,8 @@ $('#header .open').on('click', function () {
     $(this).next().next().addClass('on')
 })
 $('#header .close').on('click', function () {
-    $(this).prev().animate({
-        right: '-220px'
+    $(this).prev().find('.nav').animate({
+        right: '-250px'
     }, 300, function () {
         $(this).css({
             opacity: 0
@@ -20,7 +21,6 @@ $('#header .close').on('click', function () {
     $(this).prev().prev().addClass('on')
     $('.depth1 > li').find('.depth2').slideUp(100)
 })
-
 
 
 // 여기서부터 resize 이벤트 발생시 스크롤바 유무에 따른 상태제어 프로그램
@@ -64,7 +64,7 @@ function init() {
             display: 'none'
         })
         $('.nav').css({
-            right: '-220px',
+            right: '-250px',
             opacity: 0
         })
         $('#header .close').removeClass('on')
@@ -73,7 +73,7 @@ function init() {
         $('html').addClass('mobile').removeClass('tablet pc')
         $('html').scrollTop(0)
         $('.nav').css({
-            right: '-220px',
+            right: '-250px',
             opacity: 0
         })
         $('#header .close').removeClass('on')
@@ -89,39 +89,32 @@ $(window).on('resize', function () {
 // 여기까지 resize 이벤트 발생시 스크롤바 유무에 따른 상태제어 프로그램
 
 
-
 $('.depth1 > li').hover(
     function () {
         if ($('html').hasClass('pc')) {
-            // $(this).addClass('on')
             $(this).find('.depth2').stop().slideDown(300)
         }
     },
     function () {
         if ($('html').hasClass('pc')) {
-            // $(this).removeClass('on')
             $(this).find('.depth2').stop().slideUp(300)
         }
     }
 )
 
 
-
 var licnt = $('.depth1 > li').length
 $('.depth1 > li').on('click', function (e) {
     var ind = $(this).index()
-    if (ind !== 0 && ind !== licnt - 1) {
+    // if (ind !== 0 && ind !== licnt - 1) 
+    {
         if ($('html').hasClass('mobile') || $('html').hasClass('tablet')) {
-            e.preventDefault()
-            // $(this).toggleClass('on').siblings().removeClass('on')
+            // e.preventDefault()
             $(this).find('.depth2').stop().slideToggle(300)
             $(this).siblings().find('.depth2').stop().slideUp(300)
         }
     }
-
-
 })
-
 
 
 $('.depth2 > li').on('click', function (e) {
@@ -129,7 +122,7 @@ $('.depth2 > li').on('click', function (e) {
 })
 
 
-
+// gotop 버튼
 $(window).on('scroll', function () {
     var sct = $(this).scrollTop()
     if (sct >= 10 && !$('#header').hasClass('on')) {
@@ -142,10 +135,7 @@ $(window).on('scroll', function () {
 })
 
 
-
-
-
-// gotop버튼 클릭시 부드럽게 위로 스크롤시키기
+// gotop 버튼 클릭시 부드럽게 위로 스크롤시키기
 $('.gotop').on('click', function (e) {
     e.preventDefault()
     $('html').animate({
