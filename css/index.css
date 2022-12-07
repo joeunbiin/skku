@@ -55,19 +55,19 @@ img[src$=".svg"] {
 
 /* #page 공통 */
 #page {margin-top: 100px;}
-#page > section:nth-of-type(1) {padding: 50px 0;}
+#page > section:nth-of-type(1) {padding: 80px 0 50px;}
 #page .tit {text-align: center;}
-#page .tit h1 {font-weight: 900; text-align: center;
-               padding: 0 7px; display: inline-block;
+#page .tit h1 {font-weight: 900; text-align: center; 
+               padding: 0 7px 8px; display: inline-block;
                font-size: 45px; box-shadow: inset 0 -20px 0 rgba(7, 42, 96, 0.6)}
 #page .tit02 {text-align: center;}
 #page .tit02 h1 {font-weight: 900; text-align: center;
-                padding: 0 7px; display: inline-block;
-                font-size: 30px; box-shadow: inset 0 -12px 0 rgba(7, 42, 96, 0.5)}
+                padding: 0 5px 8px; display: inline-block;
+                font-size: 30px; box-shadow: inset 0 -16px 0 rgba(7, 42, 96, 0.5)}
 
 
 /* 1 .ABOUT 페이지 */
-/* intro */
+/* 1-1 intro */
 #about .about01 {margin: 100px 0 90px; font-size: 18px;}
 #about .about01 h2 {font-size: 27px; font-weight: 700; color: #072a60;
                     margin-bottom: 30px; line-height: 1.5;}
@@ -81,7 +81,7 @@ img[src$=".svg"] {
 #about .about01 .txtbox:nth-of-type(2) p:nth-of-type(3) {margin-bottom: 15px;}
 #about .about01 .txtbox:nth-of-type(2) > span {font-weight: 700; font-size: 20px;}
 
-/* contact us */
+/* 1-2 contact us */
 #about .about02 {margin: 100px 0 90px; display: flex; justify-content: space-around; 
                  font-size: 18px;}
 #about .about02 .map {width: 60%;}
@@ -95,7 +95,7 @@ img[src$=".svg"] {
 
 /* 2. RESEARCH 페이지 */
 #research .research {margin: 70px 0 60px; font-size: 16px;}
-#research .research .txtbox {margin-bottom: 40px; margin-left: 110px;}
+#research .research .txtbox {width: 80%; margin: 0 auto 40px;}
 #research .research .txtbox li {line-height: 1.8; list-style: disc; }
 #research .research .contentbox > p {text-align: center;}
 
@@ -118,7 +118,7 @@ img[src$=".svg"] {
 
 
 /* 4. PEOPLE 페이지 */
-/* professor */  
+/* 4-1 professor */  
 #people .people01 {margin: 100px 0 70px; display: flex; justify-content: center; font-size: 18px;}
 #people .people01 .right {margin-left: 50px;}
 #people .people01 .txt {margin-bottom: 25px; line-height: 1.8;}
@@ -132,7 +132,7 @@ img[src$=".svg"] {
 #people .people01 .txt span {font-weight: 700;}
 #people .people01 .txt i {margin-right: 5px; color: #777; vertical-align: middle;}
 
-/* student */  
+/* 4-2 student */  
 #people .people02 {margin: 70px 0 60px; font-size: 18px;}
 #people .people02 .contentbox {margin: 50px 0;}
 #people .people02 .contentbox > h3 {font-size: 24px; font-weight: 900; position: relative;

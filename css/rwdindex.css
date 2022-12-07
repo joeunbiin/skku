@@ -6,23 +6,131 @@
 
 - 모바일 가로, 태블릿 세로 : 480px ~ 767px
 
-- 모바일,  태블릿 : ~480px
+- 모바일,  태블릿 : ~480px */
+
+
+@media all and (max-width: 1300px) {
+  /* #page 공통 */
+  #page > section:nth-of-type(1) {padding: 80px 50px 50px}
+
+  /* 1 .ABOUT 페이지 */
+  /* 1-1 intro */
+  #about .about01 h2 {font-size: 26px;}
+
+  /* 1-2 contact us */
+  #about .about02 .txtbox {margin: 27px 0 0 43px; width: 45%;}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media all and (max-width: 1155px) {
+  /* 2. RESEARCH 페이지 */
+  #research .tit02 h1 {font-size: 26px;}
+}
 
 
 /* 769px ~ 1024px */
 @media all and (max-width: 1024px) { 
- 
+  /* #page 공통 */
+  #page > section:nth-of-type(1) {padding: 50px }
+
+  /* 1 .ABOUT 페이지 */
+  /* 1-1 intro */
+  #about .about01 {margin: 50px 0;}
+  #about .about01 .txtbox {font-size: 15px;}
+
+  /* 1-2 contact us */
+  #about .about02 {margin: 50px 0; display: block;}
+  #about .about02 .map {width: 100%;}
+  #about .about02 .txtbox {margin: 25px 0 35px ; width: 100%;
+                           text-align: center; font-size: 15px;}
+
+  /* 2. RESEARCH 페이지 */
+  #page > #research {padding: 50px 20px;}
+  #research .tit02 h1 {box-shadow: inset 0 -13px 0 rgb(7 42 96 / 50%); 
+                       font-size: 20px;}
+  #research .research {margin: 30px 0 50px;}
+  #research .research .txtbox {font-size: 15px; width: 90%;}
+
+
+
+
+
+
+
+
 
 }  
 
 
-/* 모바일 가로, 태블릿 세로  481px ~ 768px*/
+/* 모바일 가로, 태블릿 세로  481px ~ 768px */
 @media all and (max-width: 768px) { 
- 
+  /* #page 공통 */
+  #page .tit h1 {font-size: 36px; box-shadow: inset 0 -15px 0 rgba(7, 42, 96, 0.6)}
+  #page > section:nth-of-type(1) {padding: 50px 20px}
+
+  /* 1 .ABOUT 페이지 */
+  /* 1-1 intro */
+  #about .about01 {margin: 30px 0 ;}
+  #about .about01 h2 {font-size: 20px;}
+  #about .about01 > span {font-size: 16px;}
+  #about .about01 .txtbox:nth-of-type(2) {margin-top: 30px;}
+  #about .about01 .txtbox:nth-of-type(2) > span {font-size: 16px;}
+
+  /* 1-2 contact us */
+  #about .about02 {margin: 30px 0;}
+  #about .about02 .txtbox {margin: 10px 0 0 ;}
+  #about .about02 .txtbox span {font-size: 15px;}
+  #about .about02 .txtbox p {font-size: 20px;}
+  #about .about02 .txtbox ul {font-size: 17px;}
+  #about .about02 .txtbox ul > li {font-size: 15px;}
+
+  /* 2. RESEARCH 페이지 */
+  #research .tit02 h1 {box-shadow: inset 0 171px 0 rgb(7 42 96 / 33%);
+                       padding: 10px 0; line-height: 1.2;}
+
+
+
+
+
+
+
+
+
 } 
 
 
 /* 모바일,  태블릿  ~480px */
 @media all and (max-width: 480px) {
+  /* #page 공통 */
+  #page > section:nth-of-type(1) {padding: 20px}
+  #page .tit h1 {font-size: 30px;}
+
+  /* 1-1 intro */
+  #about .about01 h2 {font-size: 16px;}
+  #about .about01 .txtbox {font-size: 12px;}
+  #about .about01 > span {font-size: 14px;}
+  #about .about01 .txtbox:nth-of-type(2) > span {font-size: 14px;}
+
+  /* 1-2 contact us */
+  #about .about02 .txtbox p {font-size: 16px;}
+  #about .about02 .txtbox span {font-size: 12px;}
+  #about .about02 .txtbox ul {font-size: 14px;}
+  #about .about02 .txtbox ul > li {font-size: 12px;}
+
+  /* 2. RESEARCH 페이지 */
+  #page > #research {padding: 20px;}
+  #research .tit02 h1 {font-size: 16px;}
+  #research .research .txtbox {font-size: 12px;}
+
 
 }

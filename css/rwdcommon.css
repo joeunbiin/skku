@@ -4,12 +4,15 @@
   #header .navbox .left {width: auto;}
 } 
 
+
 @media all and (max-width: 1200px) {
   #header .navbox .left h1 {font-size: 30px;}
   #header .depth1 {font-size: 16px;}
   #header .right {font-size: 13px;}
 }
 
+
+/* 769px ~ 1024px */
 @media all and (max-width: 1024px) { 
   /* HEADER 구역 */
   #header {position: relative;}
@@ -40,6 +43,7 @@
 }  
 
 
+/* 모바일 가로, 태블릿 세로  481px ~ 768px*/
 @media all and (max-width: 768px) { 
   /* HEADER 구역 */
   #header .navbox {padding: 0 0 0 20px;}
@@ -58,6 +62,8 @@
   #footer > .left span i {font-size: 12px; }
 } 
 
+
+/* 모바일,  태블릿  ~480px */
 @media all and (max-width: 480px) {
   /* HEADER 구역 */
   #header .navbox {padding: 0 0 0 13px}
@@ -68,7 +74,6 @@
   #header .depth2 > li {padding: 10px 0;}
   #header .open, #header .close {top: 22px; right: 13px;}
   #header.on .open, #header.on .close {top: 22px; right: 13px;}
-
 
   /* FOOTER 구역 */
   #footer {padding: 30px 20px; text-align: center;}
