@@ -20,21 +20,17 @@
   /* 1-2 contact us */
   #about .about02 .txtbox {margin: 27px 0 0 43px; width: 45%;}
 
-
-
-
-
-
-
-
-
-
-
+  /* 4. PEOPLE 페이지 */
+  /* 4-1 professor */  
+  #page > #professor {padding: 50px 20px;}
 }
 
 @media all and (max-width: 1155px) {
   /* 2. RESEARCH 페이지 */
   #research .tit02 h1 {font-size: 26px;}
+
+  /* 4-2 student */
+  #people .people02 .person .infotxt {width: 69%;}
 }
 
 
@@ -61,6 +57,30 @@
   #research .research {margin: 30px 0 50px;}
   #research .research .txtbox {font-size: 15px; width: 90%;}
 
+  /* 3. PUBLICATION 페이지 */
+  #publication .publication {margin: 50px 0;}
+  #publication .tit h1 {font-size: 35px; box-shadow: inset 0 -18px 0 rgb(7 42 96 / 60%);}
+  #publication .publication .txtbox {font-size: 15px;}
+  #publication .publication .txtbox ul li:nth-of-type(1) {font-size: 17px;}
+
+  /* 4-1 professor */ 
+  #people .people01 {margin: 50px 0;}
+  #page > #people {padding: 50px 20px;} 
+  #people .people01 .txt > p {font-size: 20px;}
+  #people .people01 .txt ul {font-size: 15px;}
+  #people .people01 .left {width: 23%;}
+  #people .people01 .right {padding-left: 30px; width: 77%;}
+
+  /* 4-2 student */
+  #people .people02 {margin: 50px 10px;}
+  #people .people02 .contentbox > h3 {font-size: 20px;}
+  #people .people02 .person .infotxt {width: 77%; font-size: 15px; transform: translate(20px, 18%)}
+  #people .people02 .person ul:nth-of-type(1) {height: 152px; }
+  #people .people02 .person ul:nth-of-type(1) img {height: 152px; width: 114px}
+  /*  width: 114px */
+  #people .people02 .person .infotxt li.email {font-size: 14px;}
+  
+
 
 
 
@@ -70,6 +90,7 @@
 
 
 }  
+
 
 
 /* 모바일 가로, 태블릿 세로  481px ~ 768px */
@@ -96,24 +117,36 @@
 
   /* 2. RESEARCH 페이지 */
   #research .tit02 h1 {box-shadow: inset 0 171px 0 rgb(7 42 96 / 33%);
-                       padding: 10px 0; line-height: 1.2;}
+                       padding: 10px 5px; line-height: 1.2;}
 
+  /* 3. PUBLICATION 페이지 */
+  #publication .publication {margin: 30px 12px;}
+  #publication .tit h1 {box-shadow: inset 0 -16px 0 rgb(7 42 96 / 50%);
+                        padding: 7px 8px; font-size: 22px;}
 
+  /* 4-1 professor */ 
+  #people .people01 {margin: 30px 0;}
 
-
-
-
-
+  /* 4-2 student */
+  #people .people02 {margin: 30px 0;}
+  #people .people02 .contentbox {padding: 0 20px;}
+  #people .people02 .personbox {width: 96%; display: block;}
+  #people .people02 .person {width: 100%;}
+  #people .people02 .person .infotxt {width: 86%; font-size: 14px;}
 
 
 } 
+
+
+
+
 
 
 /* 모바일,  태블릿  ~480px */
 @media all and (max-width: 480px) {
   /* #page 공통 */
   #page > section:nth-of-type(1) {padding: 20px}
-  #page .tit h1 {font-size: 30px;}
+  #page .tit h1 {font-size: 28px;}
 
   /* 1-1 intro */
   #about .about01 h2 {font-size: 16px;}
@@ -132,5 +165,27 @@
   #research .tit02 h1 {font-size: 16px;}
   #research .research .txtbox {font-size: 12px;}
 
+  /* 3. PUBLICATION 페이지 */
+  #publication .tit h1 {box-shadow: inset 0 171px 0 rgb(7 42 96 / 33%);
+                        padding: 10px 5px; line-height: 1.2; font-size: 20px;}
+  #publication .publication .txtbox > p {font-size: 16px;}
+  #publication .publication .txtbox {font-size: 12px;}
+  #publication .publication .txtbox ul li:nth-of-type(1) {font-size: 14px;}
+
+  /* 4-1 professor */ 
+  #page > #people {padding: 20px;} 
+  #people .people01 {display: block;}
+  #people .people01 .left {width: auto; text-align: center;}
+  #people .people01 .left img {width: auto;}
+  #people .people01 .right {width: 100%; padding-left: 0; padding-top: 10px;}
+  #people .people01 .txt:nth-of-type(1) {text-align: center;}
+  #people .people01 .txt > p {font-size: 16px;}
+  #people .people01 .txt > p.udline::after {bottom: 3px; height: 5px;}
+  #people .people01 .txt ul {font-size: 12px;}
+
+  /* 4-2 student */
+  #people .people02 .contentbox > h3 {font-size: 16px;}
+  #people .people02 .person .infotxt {width: 76%; font-size: 12px;}
+  #people .people02 .person .infotxt li.email {font-size: 12px;}
 
 }

@@ -70,8 +70,8 @@
   #header .navbox .nav {top: 82px;}
   #header .navbox .left h1 {font-size: 22px; margin-top: 13px;}
   #header .navbox .left img {width: 40px;}
-  #header .depth1 > li {font-size: 14px; padding: 10px 0 7px;}
-  #header .depth2 > li {padding: 10px 0;}
+  /* #header .depth1 > li {font-size: 14px; padding: 10px 0 7px;} */
+  #header .depth2 > li {padding: 13px 0;}
   #header .open, #header .close {top: 22px; right: 13px;}
   #header.on .open, #header.on .close {top: 22px; right: 13px;}
 
