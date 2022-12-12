@@ -134,6 +134,10 @@
   #people .people02 .person {width: 100%;}
   #people .people02 .person .infotxt {width: 86%; font-size: 14px;}
 
+  /* 5. GALLERY 페이지 */
+  /* gallery */  
+  #gallery .gallery .contentbox ul li:nth-of-type(2) {font-size: 12px; padding: 7px 0;}
+
 
 } 
 
